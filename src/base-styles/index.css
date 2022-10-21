@@ -1,0 +1,22 @@
+@import "./reset.css";
+@import "./variables.css"; 
+
+body{
+    font-family: var(--f-primary);
+}
+
+.btn{
+    display: block;  
+    background-color: var(--c-violet); 
+    color: var(--c-white); 
+    border: none; 
+    cursor: pointer; 
+    width: 100%; 
+    padding: .8rem; 
+    border-radius: 10px; 
+    margin-top: 3.5rem; 
+}
+
+.btn:active{
+    scale: .98; 
+}

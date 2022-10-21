@@ -1,0 +1,12 @@
+.inputs{
+    display: flex; 
+    flex-direction: column; 
+    gap: 1rem; 
+}
+
+.bottomInputs{
+    display: flex; 
+    align-items: flex-end;   
+    justify-content: space-between;
+    position: relative; 
+}

@@ -1,0 +1,131 @@
+.cards {
+  background: url("../images/bg-main-mobile.png") center/cover no-repeat;
+  padding: 3rem 0; 
+  position: relative; 
+}
+
+.absoluteCard{
+    position: absolute; 
+    z-index: 5;  
+    bottom: -45px; 
+    translate: 10px; 
+    width: 310px; 
+    
+}
+
+.backCard{
+    width: 320px; 
+    translate: 40px;  
+}
+.frontCard,
+.backCard {
+  max-width: 100%;
+  position: relative;
+  box-shadow: 0 3px 30px rgba(58, 42, 83, 0.2); 
+  border-radius: 10px; 
+}
+
+
+.frontCard .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;  
+  color: var(--c-white); 
+  display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;  
+    justify-content: space-between;  
+}
+.logo{
+    width: 60px; 
+}
+.frontCard .textBox{
+    width: 100%;  
+}
+.frontCard .flexBox{
+    margin-top: .5rem; 
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;  
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: .9rem; 
+}
+
+.cardNumber{
+    font-size: 1.2rem;
+    letter-spacing: .123em;
+}
+
+.marginLeft{
+    margin-left: 1rem;
+}
+.security{
+    position: absolute; 
+    top: 76px; 
+    right: 45px; 
+    font-size: .9rem; 
+}
+.backCard .content{
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    color: var(--c-white);
+}
+
+
+
+
+@media (min-width: 750px) {
+    .animated{
+        position: absolute;
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        background-color: rgb(100, 76, 106); 
+        animation: 5s blur ease-in-out infinite;  
+    
+    }
+    .cards{
+        padding: 0; 
+        background-image: url("../images//bg-main-desktop.png");
+        width: 40vw; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: flex-end;
+    }
+
+    .absoluteCard{
+        position: relative;
+        bottom: 0; 
+        translate: 70px -20px; 
+        width: 350px; 
+    }
+
+    .backCard{
+        translate: 150px 10px; 
+        width: 350px; 
+    }
+    .security{
+        top: 85px; 
+    }
+}
+
+@keyframes blur{
+    0% {
+        opacity: 0
+    } 
+    50% {
+        opacity: .3
+    }
+    100%{
+        opacity: 0; 
+    }
+}

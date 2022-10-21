@@ -1,0 +1,22 @@
+.main{
+    width: 100%; 
+    
+}
+.interactiveBox{
+    padding: 5rem var(--p-mobile) 4rem;
+}
+
+@media (min-width: 750px) {
+    .main{
+        height: 100vh; 
+        display: flex; 
+        overflow: hidden;
+    }
+    .interactiveBox{
+        width: 100%; 
+        padding: 0; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+}

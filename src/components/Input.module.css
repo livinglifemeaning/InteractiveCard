@@ -1,0 +1,64 @@
+.errorMessage {
+  visibility: hidden;
+  display: none;
+  color: var(--c-invalid);
+  margin-top: 0.5rem;
+  text-transform: initial;
+}
+
+[aria-invalid="true"] {
+  outline: 1px solid var(--c-invalid);
+}
+[aria-invalid="true"] ~ .errorMessage {
+  visibility: visible;
+  display: block;
+}
+
+.label {
+  text-transform: uppercase;
+  color: var(--c-violet);
+  font-size: 0.9rem;
+}
+.labelName {
+  display: block;
+}
+.input {
+  border: solid 1px var(--c-inactive);
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: var(--c-violet);
+  position: relative;
+}
+.input:focus-visible {
+  outline: none;
+}
+
+ .input:focus{
+    border: 2px solid hsl(278, 94%, 30%);
+ }
+
+.input.long {
+  width: 100%;
+}
+.input.med {
+  width: 10.8rem;
+}
+.input.small {
+  width: 4rem;
+}
+.input::placeholder {
+  color: hsl(279, 6%, 70%);
+}
+
+.expLabel {
+  top: 0;
+  position: absolute;
+}
+
+.expError {
+  position: absolute;
+  max-width: 9rem; 
+
+}

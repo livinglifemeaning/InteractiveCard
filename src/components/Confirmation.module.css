@@ -1,0 +1,19 @@
+.confirmation{
+    text-align: center; 
+}
+
+.check{
+    margin: 0 auto; 
+}
+
+.thanks{
+    font-size: 2rem; 
+    color: var(--c-violet); 
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    margin: 1rem 0 .5rem; 
+}
+
+.msg{
+    color: var(--c)
+}

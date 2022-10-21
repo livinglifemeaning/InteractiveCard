@@ -1,0 +1,48 @@
+[
+  {
+    "label": "Cardholder name",
+    "placeholder": "e.g. Jane Appleseed",
+    "size": "long",
+    "id": "name",
+    "autoComplete": "name",
+    "type": "text"
+  },
+  {
+    "label": "Card number",
+    "placeholder": "e.g. 1234 5678 8123 0000",
+    "size": "long",
+    "id": "cardNumber",
+    "autoComplete": "cc-number",
+    "type": "tel",
+    "inputmode": "numeric",
+    "maxlength": "19"
+  },
+  {
+    "placeholder": "MM",
+    "size": "small",
+    "id": "month",
+    "autoComplete": "cc-exp-month",
+    "type": "text",
+    "inputmode": "numeric",
+    "maxlength": "2"
+  },
+  {
+    "placeholder": "YY",
+    "size": "small",
+    "id": "year",
+    "autoComplete": "cc-exp-year",
+    "type": "text",
+    "inputmode": "numeric",
+    "maxlength": "2"
+  },
+  {
+    "label": "CVC",
+    "placeholder": "e.g. 123",
+    "size": "med",
+    "id": "securityCode",
+    "autoComplete": "cc-csc",
+    "type": "text",
+    "inputmode": "numeric",
+    "maxlength": "3"
+  }
+]
